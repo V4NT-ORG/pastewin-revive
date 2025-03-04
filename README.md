@@ -1,14 +1,22 @@
 # pastewin
 
-A light and fast static front-end for users of countries where Pastebin is banned. It was created with Python and Flask.
+pastewin is a light and fast static front-end for users in countries where Pastebin is banned. Designed with Python and Flask, it provides an accessible alternative to Pastebin.
 
-Official instance: https://pastewin.up.railway.app
+Official instance: [pastewin.up.railway.app](https://pastewin.up.railway.app)
 
 ![Screenshot](https://user-images.githubusercontent.com/40023234/164679737-ed4ad861-c215-4faf-b327-dffca21fd6ed.png)
 
-It is recommended to use it with the [Redirector](https://einaregilsson.com/redirector) browser plugin. Example configuration:
+## Key Features
+- Fast and lightweight
+- Static front-end
+- Python and Flask-based
+
+## Recommended Usage
+For an enhanced experience, use the [Redirector](https://einaregilsson.com/redirector) browser plugin with the following configuration:
+
+## Redirector Examples
+
 ```
-Description: Pastebin to Pastewin
 Example URL: https://pastewin.up.railway.app/B5EfdLF6
 Include pattern: ^https?://(?:.*\.)*(?<!link.)pastebin\.com(/.*)?$
 Redirect to: https://pastewin.up.railway.app$1
@@ -17,11 +25,12 @@ Pattern Description: ?
 Example result: https://pastewin.up.railway.app/B5EfdLF6
 ```
 
-## Install and Run
+## Documentation
 
 Clone the reporistrory:
+
 ```shell
-git clone https://github.com/beucismis/pastewin
+git clone https://github.com/OfficialV4NT/pastewin-revive
 ```
 
 Install dependencies:
@@ -39,4 +48,4 @@ Check the `https://0.0.0.0:5000` address.
 
 ## License
 
-This project lisanced under GPL-3.0 - for details check [LICENSE](LICENSE) file.
+This project is license under AGPL-3.0 - for details check [LICENSE](LICENSE.md) file.
