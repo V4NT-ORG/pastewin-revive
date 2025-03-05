@@ -1,7 +1,7 @@
 import flask
 import utils
 from io import BytesIO
-
+import os
 
 version = "0.3.0"
 app = flask.Flask(__name__)
@@ -60,4 +60,5 @@ with app.test_request_context():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=utils.PORT, debug=True)
+    debug_mode = os.getenv("FLASK_DEBUG", "False").lower() in ("true", "1", "t")
+    app.run(host="0.0.0.0", port=utils.PORT, debug=debug_mode)
